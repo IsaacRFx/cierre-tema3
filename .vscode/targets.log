@@ -1,5 +1,5 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-makefile:4: *** missing separator.  Stop.
+make: *** No rule to make target 'all'.  Stop.
 
 # GNU Make 4.3
 # Built for Windows32
@@ -7,13 +7,16 @@ makefile:4: *** missing separator.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Tue May 24 02:15:02 2022
+# Make data base, printed on Tue May 24 10:45:14 2022
 
 # Variables
 
 # environment
 SYSTEMDRIVE = C:
+# makefile (from 'makefile', line 2)
+OBJ = $(SRC:.s=.o)
 # environment
 LC_ALL = C
 # makefile (from 'makefile', line 1)
@@ -23,7 +26,7 @@ USERPROFILE = C:\Users\Isaac
 # environment
 LOCALAPPDATA = C:\Users\Isaac\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c6360c26-8b68-4e7e-8237-883e2c574588-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-340a9389-938c-4ab9-b227-f37f17ee7050-sock
 # environment
 VSCODE_CWD = C:\Users\Isaac\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +42,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7172_SJMCJSSXBASKYKPV
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20916_HSKZSWJSEBZKGARB
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -73,7 +76,7 @@ CURDIR := d:/LinuxProgramming/cierre-tema3
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -81,7 +84,8 @@ PROGRAMFILES = C:\Program Files (x86)
 # environment
 MFLAGS = -pqrR
 # default
-.SHELLFLAGS := -c
+.SHELLFL 
+AGS := -c
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -95,7 +99,7 @@ PT8HOME = D:\Program Files\Cisco Packet Tracer 8.1.1
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 7172
+VSCODE_PID = 20916
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -127,8 +131,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Users\Isaac\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Isaac\AppData\Local\Programs\Python\Python310\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Users\Isaac\AppData\Local\Micro 
-soft\WindowsApps;C:\Users\Isaac\AppData\Roaming\npm;C:\Users\Isaac\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\PostgreSQL\14\bin;C:\Program Files\PostgreSQL\14\lib
+PATH = C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Users\Isaac\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Isaac\AppData\Local\Programs\Python\Python310\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\msys64\mingw64\bin;C:\Users\Isaac\AppData\Local\Microsoft\WindowsApps;C:\Users\Isaac\AppData\Roaming\npm;C:\Users\Isaac\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\PostgreSQL\14\bin;C:\Program Files\PostgreSQL\14\lib
 # environment
 COMPUTERNAME = DESKTOP-I7C5V4F
 # default
@@ -159,14 +162,14 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 USERDOMAIN = DESKTOP-I7C5V4F
-# environment
+# 'override' directive
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
 # environment
 __COMPAT_LAYER = RunAsAdmin Installer
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := compile
 # default
 MAKE_VERSION := 4.3
 # environment
@@ -208,7 +211,7 @@ PROCESSOR_REVISION = 0802
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=7/108=6%
+# Load=98/1024=10%, Rehash=0, Collisions=11/127=9%
 
 # Pattern-specific Variable Values
 
@@ -216,16 +219,33 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
 
 # Directories
 
-# . (key d:/LinuxProgramming/cierre-tema3, mtime 1653383701): 10 files, no impossibilities.
+# . (key d:/LinuxProgramming/cierre-tema3, mtime 1653411836): 12 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 %.o: %.s
+#  re 
+cipe to execute (from 'makefile', line 7):
+	as -o $@ $^
+	
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
+
+# Not a target:
+hello.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+compile: hello.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 11):
+	gcc -o $@ $^
 
 # Not a target:
 .DEFAULT:
@@ -236,30 +256,31 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
 # Not a target:
 all:
 #  Command line target.
-#  Implicit rule search has not been done.
-#  Modification time never checked.
+#  Implicit rule search has been done.
+#  File does not exist.
 #  File has not been updated.
 
 # Not a target:
 makefile:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  Implicit rule search has been done.
+#  Last modified 2022-05-24 10:03:54
+#  File has been updated.
+#  Successfully updated.
 
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/5=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 101 B / avg = 6 B
-# current buf: size = 8174 B / used = 101 B / count = 15 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 125 B / avg = 6 B
+# current buf: size = 8174 B / used = 125 B / count = 18 / avg = 6 B
 
-# strcache performance: lookups = 19 / hit rate = 21%
+# strcache performance: lookups = 24 / hit rate = 25%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Tue May 24 02:15:02 2022
+# Load=18/8192=0%, Rehash=0, Collisions=0/24=0%
+# Finished Make data base on Tue May 24 10:45:14 2022
 
  
