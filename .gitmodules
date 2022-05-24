@@ -1,0 +1,3 @@
+[submodule "interfaz"]
+	path = interfaz
+	url = https://github.com/tectijuana/interfaz
