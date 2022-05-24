@@ -2,10 +2,10 @@ SRC=$(wildcard *.s)
 OBJ=$(SRC:.s=.o)
 
 
-all: $(OBJ) %.o
-
+#GCC MAKE RULE
 %.o: %.s
 	as -o $@ $^
+	
 
-%: %.o
+compile: $(OBJ)
 	gcc -o $@ $^
