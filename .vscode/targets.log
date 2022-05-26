@@ -1,6 +1,4 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for Windows32
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -9,7 +7,7 @@ make: *** No rule to make target 'all'.  Stop.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue May 24 10:45:14 2022
+# Make data base, printed on Wed May 25 19:29:59 2022
 
 # Variables
 
@@ -26,7 +24,7 @@ USERPROFILE = C:\Users\Isaac
 # environment
 LOCALAPPDATA = C:\Users\Isaac\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-340a9389-938c-4ab9-b227-f37f17ee7050-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-36e45c53-bad4-4477-9ec8-efc92cf8ffd6-sock
 # environment
 VSCODE_CWD = C:\Users\Isaac\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -42,7 +40,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20916_HSKZSWJSEBZKGARB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10520_HNQIKCFUDQVPLXVM
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -84,8 +82,7 @@ PROGRAMFILES = C:\Program Files (x86)
 # environment
 MFLAGS = -pqrR
 # default
-.SHELLFL 
-AGS := -c
+.SHELLFLAGS := -c
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -99,7 +96,7 @@ PT8HOME = D:\Program Files\Cisco Packet Tracer 8.1.1
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 20916
+VSCODE_PID = 10520
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -169,7 +166,7 @@ OS = Windows_NT
 # environment
 __COMPAT_LAYER = RunAsAdmin Installer
 # makefile
-.DEFAULT_GOAL := compile
+.DEFAULT_GOAL := all
 # default
 MAKE_VERSION := 4.3
 # environment
@@ -211,7 +208,7 @@ PROCESSOR_REVISION = 0802
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=11/127=9%
+# Load=98/1024=10%, Rehash=0, Collisions=12/132=9%
 
 # Pattern-specific Variable Values
 
@@ -219,33 +216,60 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
 
 # Directories
 
-# . (key d:/LinuxProgramming/cierre-tema3, mtime 1653411836): 12 files, no impossibilities.
+# . (key d:/LinuxProgramming/cierre-tema3, mtime 1653495865): 11 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 %.o: %.s
-#  re 
-cipe to execute (from 'makefile', line 7):
+#  recipe 
+ to execute (from 'makefile', line 9):
 	as -o $@ $^
-	
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
-# Not a target:
-hello.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+hello.o: hello.s
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'hello'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := hello.o
+# automatic
+# * := hello
+# automatic
+# < := hello.s
+# automatic
+# + := hello.s
+# automatic
+# % := 
+# automatic
+# ^ := hello.s
+# automatic
+# ? := hello.s
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  recipe to execute (from 'makefile', line 9):
+	as -o $@ $^
 
 compile: hello.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'makefile', line 11):
+#  recipe to execute (from 'makefile', line 12):
 	gcc -o $@ $^
+
+# Not a target:
+hello.s:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-25 09:24:25
+#  File has been updated.
+#  Successfully updated.
 
 # Not a target:
 .DEFAULT:
@@ -253,34 +277,36 @@ compile: hello.o
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-all:
+all: hello.o compile
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-24 10:03:54
+#  Last modified 2022-05-25 09:22:12
 #  File has been updated.
 #  Successfully updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# Load=7/1024=1%, Rehash=0, Collisions=0/25=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 125 B / avg = 6 B
-# current buf: size = 8174 B / used = 125 B / count = 18 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 131 B / avg = 6 B
+# current buf: size = 8174 B / used = 131 B / count = 19 / avg = 6 B
 
-# strcache performance: lookups = 24 / hit rate = 25%
+# strcache performance: lookups = 30 / hit rate = 36%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Tue May 24 10:45:14 2022
+# Load=19/8192=0%, Rehash=0, Collisions=0/30=0%
+# Finished Make data base on Wed May 25 19:29:59 2022
 
  

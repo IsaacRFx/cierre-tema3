@@ -1,1 +1,1 @@
-{"buildTargets":["compile"],"launchTargets":["d:\\LinuxProgramming\\cierre-tema3>compile()"],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
+{"buildTargets":["all","compile","hello.o"],"launchTargets":["d:\\LinuxProgramming\\cierre-tema3>compile()"],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
